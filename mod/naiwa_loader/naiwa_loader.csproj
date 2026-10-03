@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>13.0</LangVersion>
+    <AssemblyName>NaiWa.Loader</AssemblyName>
+    <RootNamespace>NaiWa.Loader</RootNamespace>
+    <!-- 引导器只用跨版本稳定的 API（ModInitializerAttribute / Log），引用当前游戏 DLL 即可 -->
+    <Sts2DataDir Condition="'$(Sts2DataDir)' == ''">$(MSBuildProjectDirectory)\..\..\dependencies\0.111.0</Sts2DataDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="sts2">
+      <HintPath>$(Sts2DataDir)\sts2.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(Sts2DataDir)\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

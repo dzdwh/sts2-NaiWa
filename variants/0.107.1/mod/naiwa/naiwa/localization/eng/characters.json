@@ -1,0 +1,16 @@
+{
+  "NAI_WA.title": "naiwa",
+  "NAI_WA.titleObject": "naiwa",
+  "NAI_WA.description": "A naiwa freshly escaped from Milkshank Prison.\nWhat brings it to the Spire?",
+  "NAI_WA.cardsModifierTitle": "naiwa Cards",
+  "NAI_WA.cardsModifierDescription": "naiwa cards will now appear in rewards and shops.",
+  "NAI_WA.eventDeathPrevention": "Ribbit! naiwa won't go down!",
+  "NAI_WA.goldMonologue": "[sine]I could buy so much milk with all this gold...[/sine]",
+  "NAI_WA.pronounSubject": "it",
+  "NAI_WA.pronounObject": "it",
+  "NAI_WA.pronounPossessive": "its",
+  "NAI_WA.possessiveAdjective": "its",
+  "NAI_WA.unlockText": "Unlocked by default.",
+  "NAI_WA.banter.alive.endTurnPing": "Hahaha!",
+  "NAI_WA.banter.dead.endTurnPing": "Ribbit..."
+}

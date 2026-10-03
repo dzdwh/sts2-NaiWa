@@ -1,0 +1,119 @@
+[gd_scene load_steps=19 format=3]
+
+[ext_resource type="Texture2D" path="res://images/vfx/nai_wa_nai_wang_shui_jing/round_glow.png" id="1_glow"]
+[ext_resource type="Texture2D" path="res://images/vfx/nai_wa_nai_wang_shui_jing/twinkle_star.png" id="2_star"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_additive"]
+blend_mode = 1
+light_mode = 1
+
+[sub_resource type="Curve" id="Curve_aura_scale"]
+_data = [Vector2(0, 0.92), 0.0, 0.18, 0, 0, Vector2(0.5, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.92), -0.18, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_aura_scale"]
+curve = SubResource("Curve_aura_scale")
+
+[sub_resource type="Gradient" id="Gradient_aura"]
+offsets = PackedFloat32Array(0, 0.25, 0.72, 1)
+colors = PackedColorArray(1, 0.22, 0.015, 0, 1, 0.42, 0.035, 0.14, 1, 0.26, 0.012, 0.1, 1, 0.18, 0.006, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture_aura"]
+gradient = SubResource("Gradient_aura")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_aura"]
+particle_flag_disable_z = true
+spread = 0.0
+gravity = Vector3(0, 0, 0)
+scale_min = 3.1
+scale_max = 3.45
+scale_curve = SubResource("CurveTexture_aura_scale")
+color_ramp = SubResource("GradientTexture_aura")
+
+[sub_resource type="Curve" id="Curve_core_scale"]
+_data = [Vector2(0, 0.88), 0.0, 0.28, 0, 0, Vector2(0.45, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.9), -0.22, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_core_scale"]
+curve = SubResource("Curve_core_scale")
+
+[sub_resource type="Gradient" id="Gradient_core"]
+offsets = PackedFloat32Array(0, 0.18, 0.68, 1)
+colors = PackedColorArray(1, 0.66, 0.08, 0, 1, 0.74, 0.12, 0.3, 1, 0.5, 0.035, 0.22, 1, 0.34, 0.012, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture_core"]
+gradient = SubResource("Gradient_core")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_core"]
+particle_flag_disable_z = true
+spread = 0.0
+gravity = Vector3(0, 0, 0)
+scale_min = 1.35
+scale_max = 1.6
+scale_curve = SubResource("CurveTexture_core_scale")
+color_ramp = SubResource("GradientTexture_core")
+
+[sub_resource type="Curve" id="Curve_ember_scale"]
+_data = [Vector2(0, 0), 0.0, 4.0, 0, 0, Vector2(0.16, 0.86), 0.0, 0.0, 0, 0, Vector2(0.52, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -2.5, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="CurveTexture_ember_scale"]
+curve = SubResource("Curve_ember_scale")
+
+[sub_resource type="Gradient" id="Gradient_ember"]
+offsets = PackedFloat32Array(0, 0.14, 0.62, 1)
+colors = PackedColorArray(1, 0.58, 0.04, 0, 1, 0.88, 0.24, 0.9, 1, 0.42, 0.025, 0.7, 0.82, 0.08, 0.004, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture_ember"]
+gradient = SubResource("Gradient_ember")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_embers"]
+lifetime_randomness = 0.42
+particle_flag_rotate_y = true
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(78, 18, 1)
+direction = Vector3(0, -1, 0)
+spread = 24.0
+angle_min = -180.0
+angle_max = 180.0
+initial_velocity_min = 38.0
+initial_velocity_max = 92.0
+angular_velocity_min = -70.0
+angular_velocity_max = 70.0
+gravity = Vector3(7, -5, 0)
+scale_min = 0.08
+scale_max = 0.24
+scale_curve = SubResource("CurveTexture_ember_scale")
+color_ramp = SubResource("GradientTexture_ember")
+
+[node name="ShiKongLieXiVfx" type="Node2D"]
+
+[node name="FirelightAura" type="GPUParticles2D" parent="."]
+material = SubResource("CanvasItemMaterial_additive")
+position = Vector2(943, 807)
+amount = 1
+texture = ExtResource("1_glow")
+lifetime = 4.2
+preprocess = 4.2
+local_coords = true
+process_material = SubResource("ParticleProcessMaterial_aura")
+
+[node name="FirelightCore" type="GPUParticles2D" parent="."]
+material = SubResource("CanvasItemMaterial_additive")
+position = Vector2(943, 820)
+amount = 1
+texture = ExtResource("1_glow")
+lifetime = 2.8
+preprocess = 2.8
+local_coords = true
+process_material = SubResource("ParticleProcessMaterial_core")
+
+[node name="RisingEmbers" type="GPUParticles2D" parent="."]
+material = SubResource("CanvasItemMaterial_additive")
+position = Vector2(943, 820)
+amount = 16
+texture = ExtResource("2_star")
+lifetime = 2.8
+preprocess = 2.8
+process_material = SubResource("ParticleProcessMaterial_embers")

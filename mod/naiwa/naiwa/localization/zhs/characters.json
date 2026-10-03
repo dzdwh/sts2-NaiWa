@@ -1,0 +1,16 @@
+{
+  "NAI_WA.title": "奶蛙",
+  "NAI_WA.titleObject": "奶蛙",
+  "NAI_WA.description": "一只刚从奶申克监狱逃出来的奶蛙。为什么会来到尖塔？",
+  "NAI_WA.cardsModifierTitle": "奶蛙卡牌",
+  "NAI_WA.cardsModifierDescription": "奶蛙的卡牌现在会出现在奖励和商店中。",
+  "NAI_WA.eventDeathPrevention": "呱！奶蛙才不会倒下！",
+  "NAI_WA.goldMonologue": "[sine]这些金币可以买好多好多奶……[/sine]",
+  "NAI_WA.pronounSubject": "它",
+  "NAI_WA.pronounObject": "它",
+  "NAI_WA.pronounPossessive": "它的",
+  "NAI_WA.possessiveAdjective": "它的",
+  "NAI_WA.unlockText": "初始解锁",
+  "NAI_WA.banter.alive.endTurnPing": "哈哈哈",
+  "NAI_WA.banter.dead.endTurnPing": "呱……"
+}

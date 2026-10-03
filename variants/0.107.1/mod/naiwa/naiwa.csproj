@@ -1,0 +1,33 @@
+<Project Sdk="Godot.NET.Sdk/4.5.1">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>true</ImplicitUsings>
+    <LangVersion>13.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Sts2DataDir Condition="'$(Sts2DataDir)' == ''">$(MSBuildProjectDirectory)\..\..\..\..\dependencies\0.107.1</Sts2DataDir>
+    <RitsuLibDll Condition="'$(RitsuLibDll)' == ''">$(MSBuildProjectDirectory)\..\..\..\..\dependencies\RitsuLib\STS2-RitsuLib.dll</RitsuLibDll>
+    <!-- 排除 worktree 里的构建残留：plain csproj 的 obj/bin、旧 temp_bak* 备份（否则默认编译通配符会捡进
+         生成文件导致 CS0579 重复 AssemblyInfo 属性） -->
+    <DefaultItemExcludes>$(DefaultItemExcludes);obj/**;bin/**;.godot/mono/temp_bak/**;.godot/mono/temp_bak2/**;.godot/mono/temp_bak3/**</DefaultItemExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="sts2">
+      <HintPath>$(Sts2DataDir)\sts2.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(Sts2DataDir)\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SmartFormat">
+      <HintPath>$(Sts2DataDir)\SmartFormat.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="STS2-RitsuLib">
+      <HintPath>$(RitsuLibDll)</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

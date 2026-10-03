@@ -1,0 +1,737 @@
+{
+  "ancients.json": {
+    "DARV.talk.NAI_WA.0-0.ancient": [],
+    "DARV.talk.NAI_WA.1-0r.ancient": [],
+    "DARV.talk.NAI_WA.2-0.ancient": [],
+    "DARV.talk.NAI_WA.2-1.char": [],
+    "DARV.talk.NAI_WA.2-2.ancient": [],
+    "THE_ARCHITECT.talk.NAI_WA.0-0r.ancient": [],
+    "THE_ARCHITECT.talk.NAI_WA.0-1r.char": [],
+    "THE_ARCHITECT.talk.NAI_WA.1-0r.ancient": [],
+    "THE_ARCHITECT.talk.NAI_WA.1-1r.char": [],
+    "THE_ARCHITECT.talk.NAI_WA.1-2r.ancient": [],
+    "THE_ARCHITECT.talk.NAI_WA.2-0r.ancient": [],
+    "THE_ARCHITECT.talk.NAI_WA.2-1r.char": [],
+    "THE_ARCHITECT.talk.NAI_WA.2-2r.ancient": [],
+    "OROBAS.talk.NAI_WA.0-0.ancient": [],
+    "OROBAS.talk.NAI_WA.0-1.char": [],
+    "OROBAS.talk.NAI_WA.0-2.ancient": [],
+    "OROBAS.talk.NAI_WA.1-0r.ancient": [],
+    "OROBAS.talk.NAI_WA.1-1r.char": [],
+    "OROBAS.talk.NAI_WA.2-0.ancient": [],
+    "OROBAS.talk.NAI_WA.2-1.char": [],
+    "OROBAS.talk.NAI_WA.2-2.ancient": [],
+    "PAEL.talk.NAI_WA.0-0.ancient": [],
+    "PAEL.talk.NAI_WA.0-1.char": [],
+    "PAEL.talk.NAI_WA.0-2.ancient": [],
+    "PAEL.talk.NAI_WA.1-0r.ancient": [],
+    "PAEL.talk.NAI_WA.1-1r.char": [],
+    "PAEL.talk.NAI_WA.2-0.ancient": [],
+    "PAEL.talk.NAI_WA.2-1.char": [],
+    "PAEL.talk.NAI_WA.2-2.ancient": [],
+    "NONUPEIPE.talk.NAI_WA.0-0.ancient": [],
+    "NONUPEIPE.talk.NAI_WA.0-1.char": [],
+    "NONUPEIPE.talk.NAI_WA.0-2.ancient": [],
+    "NONUPEIPE.talk.NAI_WA.1-0r.ancient": [],
+    "NONUPEIPE.talk.NAI_WA.1-1r.char": [],
+    "NONUPEIPE.talk.NAI_WA.2-0.ancient": [],
+    "NONUPEIPE.talk.NAI_WA.2-1.char": [],
+    "NONUPEIPE.talk.NAI_WA.2-2.ancient": [],
+    "TANX.talk.NAI_WA.0-0.ancient": [],
+    "TANX.talk.NAI_WA.0-1.char": [],
+    "TANX.talk.NAI_WA.0-2.ancient": [],
+    "TANX.talk.NAI_WA.1-0r.ancient": [],
+    "TANX.talk.NAI_WA.1-1r.char": [],
+    "TANX.talk.NAI_WA.2-0.ancient": [],
+    "TANX.talk.NAI_WA.2-1.char": [],
+    "TANX.talk.NAI_WA.2-2.ancient": [],
+    "TEZCATARA.talk.NAI_WA.0-0.ancient": [],
+    "TEZCATARA.talk.NAI_WA.0-1.char": [],
+    "TEZCATARA.talk.NAI_WA.0-2.ancient": [],
+    "TEZCATARA.talk.NAI_WA.1-0r.ancient": [],
+    "TEZCATARA.talk.NAI_WA.1-1r.char": [],
+    "TEZCATARA.talk.NAI_WA.2-0.ancient": [],
+    "TEZCATARA.talk.NAI_WA.2-1.char": [],
+    "TEZCATARA.talk.NAI_WA.2-2.ancient": [],
+    "VAKUU.talk.NAI_WA.0-0.ancient": [],
+    "VAKUU.talk.NAI_WA.0-1.char": [],
+    "VAKUU.talk.NAI_WA.0-2.ancient": [],
+    "VAKUU.talk.NAI_WA.1-0r.ancient": [],
+    "VAKUU.talk.NAI_WA.1-1r.char": [],
+    "VAKUU.talk.NAI_WA.2-0.ancient": [],
+    "VAKUU.talk.NAI_WA.2-1.char": [],
+    "VAKUU.talk.NAI_WA.2-2.ancient": [],
+    "NEOW.talk.NAI_WA.0-0.ancient": [],
+    "NEOW.talk.NAI_WA.0-1.char": [],
+    "NEOW.talk.NAI_WA.0-2.ancient": [],
+    "NEOW.talk.NAI_WA.1-0r.ancient": [],
+    "NEOW.talk.NAI_WA.1-1r.char": [],
+    "NEOW.talk.NAI_WA.2-0.ancient": [],
+    "NEOW.talk.NAI_WA.2-1.char": [],
+    "NEOW.talk.NAI_WA.2-2.ancient": []
+  },
+  "card_keywords.json": {
+    "2000.title": [],
+    "2000.description": [],
+    "2013.title": [],
+    "2013.description": [],
+    "2001.title": [],
+    "2001.description": [],
+    "2002.title": [],
+    "2002.description": [],
+    "2003.title": [],
+    "2003.description": [],
+    "2004.title": [],
+    "2004.description": [],
+    "2005.title": [],
+    "2005.description": [],
+    "2006.title": [],
+    "2006.description": [],
+    "2007.title": [],
+    "2007.description": [],
+    "2008.title": [],
+    "2008.description": [],
+    "2009.title": [],
+    "2009.description": [],
+    "2010.title": [],
+    "2010.description": [],
+    "2011.title": [],
+    "2011.description": [],
+    "2015.title": [],
+    "2015.description": [],
+    "2012.title": [],
+    "2012.description": [],
+    "2014.title": [],
+    "2014.description": []
+  },
+  "cards.json": {
+    "NAI_WA_STRIKE.title": [],
+    "NAI_WA_STRIKE.description": [
+      "Damage"
+    ],
+    "NAI_WA_TANG_HUA.title": [],
+    "NAI_WA_TANG_HUA.description": [],
+    "NAI_WA_DEFEND.title": [],
+    "NAI_WA_DEFEND.description": [
+      "Block"
+    ],
+    "NAI_WA_XIAO.title": [],
+    "NAI_WA_XIAO.description": [
+      "VigorPower"
+    ],
+    "NAI_WA_FENG_TI.title": [],
+    "NAI_WA_FENG_TI.description": [
+      "Damage",
+      "Repeat"
+    ],
+    "NAI_WA_YAO.title": [],
+    "NAI_WA_YAO.description": [
+      "BaseHp",
+      "PerTangHua"
+    ],
+    "NAI_WA_SHI_TOU.title": [],
+    "NAI_WA_SHI_TOU.description": [
+      "NaiWaShiTouPower"
+    ],
+    "NAI_WA_BENG.title": [],
+    "NAI_WA_BENG.description": [
+      "Amount",
+      "IfUpgraded"
+    ],
+    "NAI_WA_DAO.title": [],
+    "NAI_WA_DAO.description": [],
+    "NAI_WA_DAO.selectionScreenPrompt": [],
+    "NAI_WA_NAI_DAO.title": [],
+    "NAI_WA_NAI_DAO.description": [
+      "Damage",
+      "IfUpgraded"
+    ],
+    "NAI_WA_PENG_FU.title": [],
+    "NAI_WA_PENG_FU.description": [
+      "Damage"
+    ],
+    "NAI_WA_ZHONG_BIN.title": [],
+    "NAI_WA_ZHONG_BIN.description": [
+      "Damage"
+    ],
+    "NAI_WA_YOU_YU.title": [],
+    "NAI_WA_YOU_YU.description": [
+      "CalculatedDamage",
+      "ExtraDamage"
+    ],
+    "NAI_WA_SHI_JIE.title": [],
+    "NAI_WA_SHI_JIE.description": [
+      "NaiWaShiJiePower"
+    ],
+    "NAI_WA_NAHAN.title": [],
+    "NAI_WA_NAHAN.description": [
+      "CalculatedDamage",
+      "ExtraDamage"
+    ],
+    "NAI_WA_JIUSHU.title": [],
+    "NAI_WA_JIUSHU.description": [
+      "Energy",
+      "Reduce"
+    ],
+    "NAI_WA_NAINASI.title": [],
+    "NAI_WA_NAINASI.description": [
+      "Draw"
+    ],
+    "NAI_WA_NAILIU.title": [],
+    "NAI_WA_NAILIU.description": [
+      "ThornsPower"
+    ],
+    "NAI_WA_NAI_QI_LIN.title": [],
+    "NAI_WA_NAI_QI_LIN.description": [
+      "Energy"
+    ],
+    "NAI_WA_HUO_BAO_NAI_JIAO.title": [],
+    "NAI_WA_HUO_BAO_NAI_JIAO.description": [
+      "StrengthPower"
+    ],
+    "NAI_WA_NAI_GUA.title": [],
+    "NAI_WA_NAI_GUA.description": [
+      "DexterityPower"
+    ],
+    "NAI_WA_MO_LI_NAI_LV.title": [],
+    "NAI_WA_MO_LI_NAI_LV.description": [
+      "Draw"
+    ],
+    "NAI_WA_NAI_YOU_GUO.title": [],
+    "NAI_WA_NAI_YOU_GUO.description": [
+      "SlipperyPower"
+    ],
+    "NAI_WA_WO_TA_ZHI_RU_WA.title": [],
+    "NAI_WA_WO_TA_ZHI_RU_WA.description": [
+      "Draw"
+    ],
+    "NAI_WA_NAI_GE_LA_DI_ZHI_SI.title": [],
+    "NAI_WA_NAI_GE_LA_DI_ZHI_SI.description": [
+      "Amount"
+    ],
+    "NAI_WA_ZI_YOU_YIN_DAO_NAI_WA.title": [],
+    "NAI_WA_ZI_YOU_YIN_DAO_NAI_WA.description": [],
+    "NAI_WA_ZI_YOU_YIN_DAO_NAI_WA.selectionScreenPrompt": [],
+    "NAI_WA_DUO_LUO_NAI_WA.title": [],
+    "NAI_WA_DUO_LUO_NAI_WA.description": [],
+    "NAI_WA_JIANG_JUN_JI_LUO_LE_YI_ZHI_NAI_WA.title": [],
+    "NAI_WA_JIANG_JUN_JI_LUO_LE_YI_ZHI_NAI_WA.description": [],
+    "NAI_WA_JIANG_JUN_JI_LUO_LE_YI_ZHI_NAI_WA.selectionScreenPrompt": [],
+    "NAI_WA_ZUI_HOU_DE_NAI_CAN.title": [],
+    "NAI_WA_ZUI_HOU_DE_NAI_CAN.description": [
+      "IfUpgraded"
+    ],
+    "NAI_WA_KUA_YUE_NAI_ER_BEI_SI_SHAN.title": [],
+    "NAI_WA_KUA_YUE_NAI_ER_BEI_SI_SHAN.description": [
+      "Damage"
+    ],
+    "NAI_WA_NAI_GUO_REN.title": [],
+    "NAI_WA_NAI_GUO_REN.description": [
+      "Damage"
+    ],
+    "NAI_WA_NAI_GUO_REN.selectionScreenPrompt": [],
+    "NAI_WA_NAI_XI_TAN.title": [],
+    "NAI_WA_NAI_XI_TAN.description": [
+      "Block",
+      "HalfBlock"
+    ],
+    "NAI_WA_NAI_NAI_ZAI_SHANG_DESUWA.title": [],
+    "NAI_WA_NAI_NAI_ZAI_SHANG_DESUWA.description": [],
+    "NAI_WA_NAI_SHI_HOU.title": [],
+    "NAI_WA_NAI_SHI_HOU.description": [
+      "ExhaustMax"
+    ],
+    "NAI_WA_NAI_WA_ZHI_ZI.title": [],
+    "NAI_WA_NAI_WA_ZHI_ZI.description": [
+      "Draw"
+    ],
+    "NAI_WA_SI_XIAO_NAI_E.title": [],
+    "NAI_WA_SI_XIAO_NAI_E.description": [],
+    "NAI_WA_SI_XIAO_NAI_E.selectionScreenPrompt": [],
+    "NAI_WA_MENG_LONG.title": [],
+    "NAI_WA_MENG_LONG.description": [
+      "Block"
+    ],
+    "NAI_WA_JIANG_TANG.title": [],
+    "NAI_WA_JIANG_TANG.description": [
+      "Damage",
+      "ExtraDamage"
+    ],
+    "NAI_WA_NAI_NU.title": [],
+    "NAI_WA_NAI_NU.description": [
+      "Damage",
+      "Reduce"
+    ],
+    "NAI_WA_NAI_JING.title": [],
+    "NAI_WA_NAI_JING.description": [
+      "Block",
+      "StrengthLoss"
+    ],
+    "NAI_WA_ZI_HUA_XIANG.title": [],
+    "NAI_WA_ZI_HUA_XIANG.description": [
+      "Energy"
+    ],
+    "NAI_WA_DA_KOU_NAI_JING.title": [],
+    "NAI_WA_DA_KOU_NAI_JING.description": [
+      "JingHp"
+    ],
+    "NAI_WA_BEI.title": [],
+    "NAI_WA_BEI.description": [
+      "Block",
+      "VigorPower"
+    ],
+    "NAI_WA_SHENG_TANG.title": [],
+    "NAI_WA_SHENG_TANG.description": [
+      "Draw"
+    ],
+    "NAI_WA_NING_SHI.title": [],
+    "NAI_WA_NING_SHI.description": [
+      "TangFen"
+    ],
+    "NAI_WA_CHOU_XIANG.title": [],
+    "NAI_WA_CHOU_XIANG.description": [
+      "IfUpgraded"
+    ],
+    "NAI_WA_GUO_LIANG_YI_ZHI.title": [],
+    "NAI_WA_GUO_LIANG_YI_ZHI.description": [
+      "BlockGain"
+    ],
+    "NAI_WA_DUO_BI_SHI_JIAN.title": [],
+    "NAI_WA_DUO_BI_SHI_JIAN.description": [],
+    "NAI_WA_WAN_MEI_NAI_JI.title": [],
+    "NAI_WA_WAN_MEI_NAI_JI.description": [
+      "CalculatedDamage",
+      "ExtraDamage"
+    ],
+    "NAI_WA_NAI_LONG.title": [],
+    "NAI_WA_NAI_LONG.description": [
+      "Damage"
+    ],
+    "NAI_WA_TANG_ZHU.title": [],
+    "NAI_WA_TANG_ZHU.description": [
+      "CalculatedDamage",
+      "ExtraDamage"
+    ],
+    "NAI_WA_BAI_RI_MENG.title": [],
+    "NAI_WA_BAI_RI_MENG.description": [
+      "Damage"
+    ],
+    "NAI_WA_QING_XING.title": [],
+    "NAI_WA_QING_XING.description": [
+      "Damage"
+    ],
+    "NAI_WA_CHONG_CI.title": [],
+    "NAI_WA_CHONG_CI.description": [
+      "Damage"
+    ],
+    "NAI_WA_WEI_YA.title": [],
+    "NAI_WA_WEI_YA.description": [
+      "Damage",
+      "VulnerablePower"
+    ],
+    "NAI_WA_ROU_REN.title": [],
+    "NAI_WA_ROU_REN.description": [
+      "Block"
+    ],
+    "NAI_WA_NAI_DAN_JIANG_LIN.title": [],
+    "NAI_WA_NAI_DAN_JIANG_LIN.description": [
+      "EggHp"
+    ],
+    "NAI_WA_NAI_GOU_WO.title": [],
+    "NAI_WA_NAI_GOU_WO.description": [
+      "DogHp"
+    ],
+    "NAI_WA_HE_HU_NAI_LI.title": [],
+    "NAI_WA_HE_HU_NAI_LI.description": [
+      "Block"
+    ],
+    "NAI_WA_SI_WEI_NAI_HUA.title": [],
+    "NAI_WA_SI_WEI_NAI_HUA.description": [
+      "Bonus",
+      "Energy"
+    ],
+    "NAI_WA_WAN_WU_GUI_NAI.title": [],
+    "NAI_WA_WAN_WU_GUI_NAI.description": [],
+    "NAI_WA_PENG_YOU.title": [],
+    "NAI_WA_PENG_YOU.description": [
+      "Amount",
+      "IfUpgraded"
+    ],
+    "NAI_WA_CHAO_TANG_XING_TAI.title": [],
+    "NAI_WA_CHAO_TANG_XING_TAI.description": [],
+    "NAI_WA_YUAN_GU_DA_XIAO.title": [],
+    "NAI_WA_YUAN_GU_DA_XIAO.description": [
+      "VigorPower"
+    ],
+    "NAI_WA_TIAN_XIA_WU_SHUANG.title": [],
+    "NAI_WA_TIAN_XIA_WU_SHUANG.description": [
+      "DexterityPower",
+      "Gain",
+      "Gain",
+      "StrengthPower"
+    ],
+    "NAI_WA_NAI_JI_HE_DAN.title": [],
+    "NAI_WA_NAI_JI_HE_DAN.description": [
+      "JiHp"
+    ],
+    "NAI_WA_SI_SHENG_QI_KUO.title": [],
+    "NAI_WA_SI_SHENG_QI_KUO.description": [],
+    "NAI_WA_YONG_YUAN_DE_NAI_SHU.title": [],
+    "NAI_WA_YONG_YUAN_DE_NAI_SHU.description": [
+      "Growth",
+      "MouseHp"
+    ],
+    "NAI_RI_KUI.title": [],
+    "NAI_RI_KUI.description": [
+      "Energy"
+    ],
+    "NAI_GOU_TI.title": [],
+    "NAI_GOU_TI.description": [
+      "Block",
+      "PerTangHua"
+    ],
+    "NAI_WA_SI_ZHI_TANG_XIN_JIAN.title": [],
+    "NAI_WA_SI_ZHI_TANG_XIN_JIAN.description": [
+      "Damage",
+      "StoredPerTangHua"
+    ],
+    "NAI_WA_XIN.title": [],
+    "NAI_WA_XIN.description": [
+      "Times"
+    ],
+    "NAI_WA_NAI_LIANG_KONG_CHU.title": [],
+    "NAI_WA_NAI_LIANG_KONG_CHU.description": [
+      "Block"
+    ],
+    "NAI_WA_GE_ER_NAI_DA.title": [],
+    "NAI_WA_GE_ER_NAI_DA.description": [
+      "IfUpgraded"
+    ],
+    "NAI_WA_GE_ER_NAI_DA.selectionScreenPrompt": [],
+    "NAI_WA_NAI_TAO_GUAN_TOU.title": [],
+    "NAI_WA_NAI_TAO_GUAN_TOU.description": [
+      "Heal"
+    ],
+    "NAI_WA_XIAO_NAI_ZHU.title": [],
+    "NAI_WA_XIAO_NAI_ZHU.description": [
+      "PerCardHp"
+    ],
+    "NAI_WA_NAI_WU.title": [],
+    "NAI_WA_NAI_WU.description": [
+      "Block"
+    ],
+    "NAI_WA_NAI_WA_DE_YONG_HENG.title": [],
+    "NAI_WA_NAI_WA_DE_YONG_HENG.description": [
+      "Cost",
+      "CostUp",
+      "Damage"
+    ],
+    "NAI_WA_WANG_RI.title": [],
+    "NAI_WA_WANG_RI.description": [
+      "Damage"
+    ],
+    "NAI_WA_CHUANG_ZAO_NAI_WA.title": [],
+    "NAI_WA_CHUANG_ZAO_NAI_WA.description": [
+      "Draw",
+      "Energy"
+    ],
+    "NAI_WA_PO_BAI_ZHI_NAI.title": [],
+    "NAI_WA_PO_BAI_ZHI_NAI.description": [
+      "Damage"
+    ],
+    "NAI_WA_GANG_BEI_WA.title": [],
+    "NAI_WA_GANG_BEI_WA.description": [
+      "Block"
+    ],
+    "NAI_WA_SHU_YU_FEN.title": [],
+    "NAI_WA_SHU_YU_FEN.description": [],
+    "NAI_WA_NAI_KONG.title": [],
+    "NAI_WA_NAI_KONG.description": [
+      "Energy"
+    ],
+    "NAI_WA_GA_GA_DI_LA_XIA.title": [],
+    "NAI_WA_GA_GA_DI_LA_XIA.description": [
+      "Cards"
+    ],
+    "NAI_WA_GA_JIAO_SAI.title": [],
+    "NAI_WA_GA_JIAO_SAI.description": [
+      "Block"
+    ],
+    "NAI_WA_HOU_LA.title": [],
+    "NAI_WA_HOU_LA.description": [
+      "Damage"
+    ],
+    "NAI_WA_GAN_BA_DE.title": [],
+    "NAI_WA_GAN_BA_DE.description": [
+      "Energy"
+    ],
+    "NAI_WA_BU_ZHI_NAI_WU.title": [],
+    "NAI_WA_BU_ZHI_NAI_WU.description": [],
+    "NAI_WA_JIANG_WEI_DA_JI.title": [],
+    "NAI_WA_JIANG_WEI_DA_JI.description": [
+      "CalculatedDamage",
+      "EggHp"
+    ],
+    "NAI_WA_DA_ER_NAI_DOU.title": [],
+    "NAI_WA_DA_ER_NAI_DOU.description": [
+      "SugarPerX"
+    ],
+    "NAI_WA_NAI_JIAO.title": [],
+    "NAI_WA_NAI_JIAO.description": [
+      "Block"
+    ],
+    "NAI_WA_NAI_SE_WANG.title": [],
+    "NAI_WA_NAI_SE_WANG.description": [
+      "CalculatedDamage",
+      "ExtraDamage",
+      "Repeat"
+    ],
+    "NAI_WA_SHEN_FU.title": [],
+    "NAI_WA_SHEN_FU.description": [
+      "CalculatedDamage",
+      "ExtraDamage"
+    ],
+    "NAI_WA_TANG_JI_KE_DE.title": [],
+    "NAI_WA_TANG_JI_KE_DE.description": [
+      "Damage"
+    ],
+    "NAI_WA_DAI_ZHEN_ZHU_ER_HUAN_DE_NAI_WA.title": [],
+    "NAI_WA_DAI_ZHEN_ZHU_ER_HUAN_DE_NAI_WA.description": [
+      "Damage",
+      "IntangiblePower",
+      "Repeat"
+    ],
+    "NAI_WA_MENG_NAI_LI_SHA.title": [],
+    "NAI_WA_MENG_NAI_LI_SHA.description": [
+      "Block"
+    ],
+    "NAI_WA_SHEN_NAI_CHUAN_CHONG_LANG_LI.title": [],
+    "NAI_WA_SHEN_NAI_CHUAN_CHONG_LANG_LI.description": [
+      "Reduce"
+    ],
+    "NAI_WA_SHEN_NAI_CHUAN_CHONG_LANG_LI.selectionScreenPrompt": [],
+    "NAI_WA_ZHU_XING_NAI_WANG.title": [],
+    "NAI_WA_ZHU_XING_NAI_WANG.description": [
+      "Damage",
+      "IfUpgraded"
+    ],
+    "NAI_WA_JING_HONG_YI_PIE.title": [],
+    "NAI_WA_JING_HONG_YI_PIE.description": [
+      "IfUpgraded"
+    ],
+    "NAI_WA_NAI_PU.title": [],
+    "NAI_WA_NAI_PU.description": [
+      "Damage",
+      "Repeat"
+    ],
+    "NAI_WA_NAI_ZHI_SHOU.title": [],
+    "NAI_WA_NAI_ZHI_SHOU.description": [
+      "Cards",
+      "Damage",
+      "MaxHp"
+    ],
+    "NAI_WA_NAI_WANG_ZHI_LUAN_CONFIRM.header": [],
+    "NAI_WA_NAI_WANG_ZHI_LUAN_CONFIRM.body": [],
+    "NAI_WA_NAI_WANG_ZHI_LUAN_CONFIRM.yes": [],
+    "NAI_WA_NAI_WANG_ZHI_LUAN_CONFIRM.no": []
+  },
+  "characters.json": {
+    "NAI_WA.title": [],
+    "NAI_WA.titleObject": [],
+    "NAI_WA.description": [],
+    "NAI_WA.cardsModifierTitle": [],
+    "NAI_WA.cardsModifierDescription": [],
+    "NAI_WA.eventDeathPrevention": [],
+    "NAI_WA.goldMonologue": [],
+    "NAI_WA.pronounSubject": [],
+    "NAI_WA.pronounObject": [],
+    "NAI_WA.pronounPossessive": [],
+    "NAI_WA.possessiveAdjective": [],
+    "NAI_WA.unlockText": [],
+    "NAI_WA.banter.alive.endTurnPing": [],
+    "NAI_WA.banter.dead.endTurnPing": []
+  },
+  "events.json": {
+    "SHI_KONG_LIE_XI.title": [],
+    "SHI_KONG_LIE_XI.pages.INITIAL.description": [],
+    "SHI_KONG_LIE_XI.pages.INITIAL.options.LISTEN_CAREFULLY.title": [],
+    "SHI_KONG_LIE_XI.pages.INITIAL.options.LISTEN_CAREFULLY.description": [],
+    "SHI_KONG_LIE_XI.pages.INITIAL.options.LISTEN_CAREFULLY_RELIC.title": [],
+    "SHI_KONG_LIE_XI.pages.INITIAL.options.LISTEN_CAREFULLY_RELIC.description": [],
+    "SHI_KONG_LIE_XI.pages.INITIAL.options.LISTEN_CASUALLY.title": [],
+    "SHI_KONG_LIE_XI.pages.INITIAL.options.LISTEN_CASUALLY.description": [],
+    "SHI_KONG_LIE_XI.pages.CAREFULLY.description": [],
+    "SHI_KONG_LIE_XI.pages.CASUALLY.description": [],
+    "NAI_WA_NAI_WANG_SHUI_JING.title": [],
+    "NAI_WA_NAI_WANG_SHUI_JING.pages.INITIAL.description": [],
+    "NAI_WA_NAI_WANG_SHUI_JING.pages.INITIAL.options.A.title": [],
+    "NAI_WA_NAI_WANG_SHUI_JING.pages.INITIAL.options.A.description": [],
+    "NAI_WA_NAI_WANG_SHUI_JING.pages.INITIAL.options.A_RELIC.title": [],
+    "NAI_WA_NAI_WANG_SHUI_JING.pages.INITIAL.options.A_RELIC.description": [],
+    "NAI_WA_NAI_WANG_SHUI_JING.pages.INITIAL.options.B.title": [],
+    "NAI_WA_NAI_WANG_SHUI_JING.pages.INITIAL.options.B.description": [],
+    "NAI_WA_NAI_WANG_SHUI_JING.pages.INITIAL.options.C.title": [],
+    "NAI_WA_NAI_WANG_SHUI_JING.pages.INITIAL.options.C.description": [],
+    "NAI_WA_NAI_WANG_SHUI_JING.pages.SACRIFICE.description": [],
+    "NAI_WA_NAI_WANG_SHUI_JING.pages.SACRIFICE_RELIC.description": [],
+    "NAI_WA_NAI_WANG_SHUI_JING.pages.PAY.description": [],
+    "NAI_WA_NAI_WANG_SHUI_JING.pages.LEAVE.description": []
+  },
+  "monsters.json": {
+    "NAI_WA_EGG_MINION.name": [],
+    "NAI_WA_MOUSE_MINION.name": [],
+    "NAI_WA_DOG_MINION.name": [],
+    "NAI_WA_SNAKE_MINION.name": [],
+    "NAI_WA_RABBIT_MINION.name": [],
+    "NAI_WA_LION_MINION.name": [],
+    "NAI_WA_NAI_LONG_MINION.name": [],
+    "NAI_WA_NAI_JI_MINION.name": [],
+    "NAI_WA_NAI_ZHU_MINION.name": [],
+    "NAI_WA_JING_MINION.name": []
+  },
+  "powers.json": {
+    "NAI_WA_SHI_TOU_POWER.title": [],
+    "NAI_WA_SHI_TOU_POWER.description": [],
+    "NAI_WA_BENG_POWER.title": [],
+    "NAI_WA_BENG_POWER.description": [],
+    "NAI_WA_SHI_JIE_POWER.title": [],
+    "NAI_WA_SHI_JIE_POWER.description": [],
+    "NAI_WA_TANG_FEN_POWER.title": [],
+    "NAI_WA_TANG_FEN_POWER.description": [],
+    "NAI_WA_TANG_FEN_POWER.smartDescription": [
+      "Amount"
+    ],
+    "NAI_WA_CHOU_XIANG_POWER.title": [],
+    "NAI_WA_CHOU_XIANG_POWER.description": [],
+    "NAI_WA_CHOU_XIANG_POWER.smartDescription": [],
+    "NAI_WA_EGG_TANK_POWER.title": [],
+    "NAI_WA_EGG_TANK_POWER.description": [],
+    "NAI_WA_MOUSE_BUFF_POWER.title": [],
+    "NAI_WA_MOUSE_BUFF_POWER.description": [],
+    "NAI_WA_SNAKE_TANK_POWER.title": [],
+    "NAI_WA_SNAKE_TANK_POWER.description": [],
+    "NAI_WA_DOG_TANK_POWER.title": [],
+    "NAI_WA_DOG_TANK_POWER.description": [],
+    "NAI_WA_RABBIT_TANK_POWER.title": [],
+    "NAI_WA_RABBIT_TANK_POWER.description": [],
+    "NAI_WA_LION_TANK_POWER.title": [],
+    "NAI_WA_LION_TANK_POWER.description": [],
+    "NAI_WA_NAI_LONG_TANK_POWER.title": [],
+    "NAI_WA_NAI_LONG_TANK_POWER.description": [],
+    "NAI_WA_NAI_GOU_WO_POWER.title": [],
+    "NAI_WA_NAI_GOU_WO_POWER.description": [],
+    "NAI_WA_PENG_YOU_POWER.title": [],
+    "NAI_WA_PENG_YOU_POWER.description": [],
+    "NAI_WA_TIAN_XIA_WU_SHUANG_POWER.title": [],
+    "NAI_WA_TIAN_XIA_WU_SHUANG_POWER.description": [],
+    "NAI_WA_TIAN_XIA_WU_SHUANG_POWER.smartDescription": [
+      "Gain",
+      "Gain"
+    ],
+    "NAI_WA_ZUI_HOU_DE_NAI_CAN_POWER.title": [],
+    "NAI_WA_ZUI_HOU_DE_NAI_CAN_POWER.description": [],
+    "NAI_WA_WEIBA_POWER.title": [],
+    "NAI_WA_WEIBA_POWER.description": [],
+    "NAI_WA_ZI_HUA_XIANG_POWER.title": [],
+    "NAI_WA_ZI_HUA_XIANG_POWER.description": [],
+    "NAI_WA_KUA_YUE_NAI_ER_BEI_SI_SHAN_POWER.title": [],
+    "NAI_WA_KUA_YUE_NAI_ER_BEI_SI_SHAN_POWER.description": [],
+    "NAI_WA_CHAO_TANG_XING_TAI_POWER.title": [],
+    "NAI_WA_CHAO_TANG_XING_TAI_POWER.description": [],
+    "NAI_WA_NAI_JI_TANK_POWER.title": [],
+    "NAI_WA_SI_ZHI_TANG_XIN_JIAN_POWER.title": [],
+    "NAI_WA_SI_ZHI_TANG_XIN_JIAN_POWER.description": [],
+    "NAI_WA_SI_ZHI_TANG_XIN_JIAN_POWER.smartDescription": [
+      "Amount",
+      "StoredSugar"
+    ],
+    "NAI_WA_SI_SHENG_QI_KUO_POWER.title": [],
+    "NAI_WA_SI_SHENG_QI_KUO_POWER.description": [],
+    "NAI_WA_SI_SHENG_QI_KUO_POWER.smartDescription": [
+      "ReviveHp"
+    ],
+    "NAI_RI_KUI_POWER.title": [],
+    "NAI_RI_KUI_POWER.description": [],
+    "NAI_WA_WU_ZHI_TANG_XIN_JIAN_POWER.smartDescription": [
+      "Amount",
+      "StoredSugar"
+    ],
+    "NAI_WA_NAI_JI_TANK_POWER.description": [],
+    "NAI_WA_WAN_WU_GUI_NAI_POWER.title": [],
+    "NAI_WA_WAN_WU_GUI_NAI_POWER.description": [],
+    "NAI_WA_NAI_KONG_POWER.title": [],
+    "NAI_WA_LAUGH_POWER.title": [],
+    "NAI_WA_LAUGH_POWER.description": [],
+    "NAI_WA_LAUGH_CARD_POWER.title": [],
+    "NAI_WA_LAUGH_CARD_POWER.description": [],
+    "NAI_WA_CHAO_YUE_JI_XIAN_POWER.title": [],
+    "NAI_WA_CHAO_YUE_JI_XIAN_POWER.description": [],
+    "NAI_WA_CHAO_YUE_JI_XIAN_POWER.smartDescription": [
+      "Remaining"
+    ],
+    "NAI_WA_NAI_KONG_POWER.description": [],
+    "NAI_WA_NAI_ZHU_TANK_POWER.title": [],
+    "NAI_WA_NAI_ZHU_TANK_POWER.description": [],
+    "NAI_WA_JING_TANK_POWER.title": [],
+    "NAI_WA_JING_TANK_POWER.description": [],
+    "NAI_WA_WO_TA_ZHI_RU_WA_POWER.title": [],
+    "NAI_WA_WO_TA_ZHI_RU_WA_POWER.description": [
+      "Amount"
+    ],
+    "NAI_WA_NAI_GE_LA_DI_ZHI_SI_POWER.title": [],
+    "NAI_WA_NAI_GE_LA_DI_ZHI_SI_POWER.description": [
+      "Amount"
+    ],
+    "NAI_WA_ZI_YOU_YIN_DAO_NAI_WA_POWER.title": [],
+    "NAI_WA_ZI_YOU_YIN_DAO_NAI_WA_POWER.description": [],
+    "NAI_WA_ZI_YOU_YIN_DAO_NAI_WA_POWER.selectionScreenPrompt": [],
+    "NAI_WA_DUO_LUO_NAI_WA_POWER.title": [],
+    "NAI_WA_DUO_LUO_NAI_WA_POWER.description": [],
+    "NAI_WA_DUO_LUO_NAI_WA_POWER.smartDescription": [
+      "Amount"
+    ],
+    "NAI_WA_JIANG_JUN_JI_LUO_LE_YI_ZHI_NAI_WA_POWER.title": [],
+    "NAI_WA_JIANG_JUN_JI_LUO_LE_YI_ZHI_NAI_WA_POWER.description": [],
+    "NAI_WA_JIANG_JUN_JI_LUO_LE_YI_ZHI_NAI_WA_POWER.selectionScreenPrompt": [],
+    "NAI_WA_TANG_JI_KE_DE_POWER.title": [],
+    "NAI_WA_TANG_JI_KE_DE_POWER.description": [],
+    "NAI_WA_NAI_LIANG_KONG_CHU_POWER.title": [],
+    "NAI_WA_NAI_LIANG_KONG_CHU_POWER.description": [],
+    "NAI_WA_NAI_LIANG_KONG_CHU_POWER.smartDescription": [
+      "Amount",
+      "Block"
+    ],
+    "NAI_WA_NAI_WU_POWER.title": [],
+    "NAI_WA_NAI_WU_POWER.description": [],
+    "NAI_WA_BU_ZHI_NAI_WU_POWER.title": [],
+    "NAI_WA_BU_ZHI_NAI_WU_POWER.description": [],
+    "NAI_WA_BU_ZHI_NAI_WU_POWER.smartDescription": [
+      "Cards",
+      "Energy"
+    ]
+  },
+  "relics.json": {
+    "NAI_WA_WEIBA.title": [],
+    "NAI_WA_WEIBA.description": [],
+    "NAI_WA_WEIBA.flavor": [],
+    "SHI_ZU_WEI_DAI.title": [],
+    "SHI_ZU_WEI_DAI.description": [],
+    "SHI_ZU_WEI_DAI.flavor": [],
+    "NAI_WA_GU_LAO_YA_CHI.title": [],
+    "NAI_WA_GU_LAO_YA_CHI.description": [],
+    "NAI_WA_GU_LAO_YA_CHI.flavor": [],
+    "SHI_ZU_WEI_BA.title": [],
+    "SHI_ZU_WEI_BA.description": [],
+    "SHI_ZU_WEI_BA.flavor": [],
+    "NAI_WA_NAI_WANG_ZHI_LUAN.title": [],
+    "NAI_WA_NAI_WANG_ZHI_LUAN.description": [],
+    "NAI_WA_NAI_WANG_ZHI_LUAN.flavor": []
+  },
+  "rest_site_ui.json": {
+    "OPTION_SHI_ZU_DIGEST.name": [],
+    "OPTION_SHI_ZU_DIGEST.description": [
+      "RelicName"
+    ],
+    "OPTION_SHI_ZU_DIGEST.descriptionDisabled": []
+  }
+}

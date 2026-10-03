@@ -1,0 +1,18 @@
+{
+	"NAI_WA_WEIBA.title": "奶蛙尾巴",
+  "NAI_WA_WEIBA.description": "你的糖分触发阈值修改为最大生命值。\n回合开始时，手牌中每有1张[gold]糖化[/gold]，获得1层[gold]活力[/gold]。",
+	"NAI_WA_WEIBA.flavor": "尾巴轻轻一甩，糖分就抖掉了。",
+	"SHI_ZU_WEI_DAI.title": "始祖肚皮",
+	"SHI_ZU_WEI_DAI.description": "在休息处可选择消化，删除一张牌，3场普通战斗之后获得额外一次卡牌选择。",
+	"SHI_ZU_WEI_DAI.flavor": "三亿年前的遗物，散发着古老的气息。\n[gold]\"咕噜——\"——胃袋轻轻蠕动[/gold]",
+	"NAI_WA_GU_LAO_YA_CHI.title": "古老牙齿",
+	"NAI_WA_GU_LAO_YA_CHI.description": "将牌组中的[gold]大笑[/gold]蜕变为[gold]远古大笑[/gold]。",
+	"NAI_WA_GU_LAO_YA_CHI.flavor": "这个遗物的细节将在未来揭晓。",
+	"SHI_ZU_WEI_BA.title": "始祖尾巴",
+  "SHI_ZU_WEI_BA.description": "你的糖分触发阈值修改为最大生命值。\n回合开始时，手牌中每有1张[gold]糖化[/gold]，获得3层[gold]活力[/gold]。",
+	"SHI_ZU_WEI_BA.flavor": "古老而强大的尾巴。"
+	,
+	"NAI_WA_NAI_WANG_ZHI_LUAN.title": "奶王之卵",
+	"NAI_WA_NAI_WANG_ZHI_LUAN.description": "濒死时复活并保留1点血量，选择是否进行奶之刻。进行后获得[gold]奶之手[/gold]，并令所有生物大笑。",
+	"NAI_WA_NAI_WANG_ZHI_LUAN.flavor": "这个遗物的细节将在未来揭晓。"
+}

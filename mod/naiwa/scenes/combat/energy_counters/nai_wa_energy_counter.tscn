@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/combat/energy_counters/ironclad_energy_counter.tscn" id="1"]
+
+[node name="NaiWaEnergyCounter" instance=ExtResource("1")]

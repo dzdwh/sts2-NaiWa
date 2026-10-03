@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "variants": [
+    {
+      "compatTarget": "0.107.1",
+      "directory": "lib/0.107.1",
+      "assembly": "naiwa.dll"
+    },
+    {
+      "compatTarget": "0.111.0",
+      "directory": "lib/0.111.0",
+      "assembly": "naiwa.dll"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="SpineSkeletonDataResource" path="res://animations/vfx/laugh/naiwa_laugh_skel_data.tres" id="1"]
+[ext_resource type="AudioStream" path="res://audio/naiwa_laugh.mp3" id="2"]
+
+[sub_resource type="GDScript" id="GDScript_laugh"]
+script/source = "extends Control
+
+func _ready():
+	var spine = get_node('Spine')
+	if spine.has_method('get_animation_state'):
+		spine.call('get_animation_state').call('set_animation', 'laugh', false)
+	get_node('Audio').play()
+	await get_tree().create_timer(5.0).timeout
+	queue_free()
+"
+
+[node name="NaiwaLaugh" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -500.0
+offset_top = -500.0
+offset_right = 500.0
+offset_bottom = 500.0
+mouse_filter = 2
+
+[node name="Spine" type="SpineSprite" parent="."]
+skeleton_data_res = ExtResource("1")
+preview_animation = "laugh"
+scale = Vector2(0.5, 0.5)
+position = Vector2(250, 250)
+
+[node name="Audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2")

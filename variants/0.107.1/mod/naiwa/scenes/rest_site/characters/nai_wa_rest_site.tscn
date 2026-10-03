@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/rest_site/characters/ironclad_rest_site.tscn" id="1"]
+
+[node name="NaiWaRestSite" instance=ExtResource("1")]

@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxauvge2rm6mg"]
+
+[ext_resource type="Script" uid="uid://dkvnqs08cqwen" path="res://src/Core/Nodes/Screens/Shops/NaiWaMerchantCharacter.cs" id="1_script"]
+[ext_resource type="SpineSkeletonDataResource" path="res://animations/characters/nai_wa/naiwa_skel_data.tres" id="3_skel"]
+[ext_resource type="Texture2D" uid="uid://cbk358lqe7lvi" path="res://images/merchant/nai_wa_merchant.png" id="4_tex"]
+
+[node name="NaiWaMerchant" type="Node2D"]
+script = ExtResource("1_script")
+
+[node name="Spine" type="SpineSprite" parent="."]
+skeleton_data_res = ExtResource("3_skel")
+preview_skin = "Default"
+preview_animation = "-- Empty --"
+preview_frame = false
+preview_time = 0.0
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-94, -345)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_tex")
+centered = false

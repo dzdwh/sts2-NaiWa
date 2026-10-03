@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://images/rooms/naizhike.png" id="1_background"]
+[ext_resource type="Texture2D" path="res://images/relics/nai_wa_nai_wang_zhi_luan.png" id="2_egg"]
+
+[node name="NaiZhiKeTransitionLayout" type="Control"]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("1_background")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="EggTarget" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -16.0
+offset_top = 172.0
+offset_right = 48.0
+offset_bottom = 236.0
+grow_horizontal = 2
+mouse_filter = 2
+tooltip_text = "拖动此节点即可同时调整奶王之卵飞入终点与背景扩散圆心"
+texture = ExtResource("2_egg")
+expand_mode = 1
+stretch_mode = 5
