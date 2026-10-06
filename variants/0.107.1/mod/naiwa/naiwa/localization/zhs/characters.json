@@ -10,7 +10,7 @@
   "NAI_WA.pronounObject": "它",
   "NAI_WA.pronounPossessive": "它的",
   "NAI_WA.possessiveAdjective": "它的",
-  "NAI_WA.unlockText": "初始解锁",
+  "NAI_WA.unlockText": "以{Prerequisite}完成一局游戏来解锁。",
   "NAI_WA.banter.alive.endTurnPing": "哈哈哈",
   "NAI_WA.banter.dead.endTurnPing": "呱……"
 }

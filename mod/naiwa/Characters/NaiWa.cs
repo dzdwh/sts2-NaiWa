@@ -43,7 +43,7 @@ namespace NaiWa.Characters;
 public sealed class NaiWa : CharacterModel
 {
 	public override CharacterGender Gender => CharacterGender.Neutral;
-	protected override CharacterModel? UnlocksAfterRunAs => null;
+	protected override CharacterModel? UnlocksAfterRunAs => ModelDb.Character<Defect>();
 
 	public override Color NameColor => new("7BC67EFF");
 	public override int StartingHp => 78;
@@ -223,10 +223,12 @@ public static class NaiWaPatchAdd
 [HarmonyPatch(typeof(UnlockState), nameof(UnlockState.Characters), MethodType.Getter)]
 public static class NaiWaUnlockPatch
 {
-	public static void Postfix(ref IEnumerable<CharacterModel> __result)
+	public static void Postfix(UnlockState __instance, ref IEnumerable<CharacterModel> __result)
 	{
 		var list = __result.ToList();
-		list.Add(ModelDb.Character<NaiWa>());
+		var naiwa = ModelDb.Character<NaiWa>();
+		list.RemoveAll(c => c is NaiWa);
+		if (__instance.IsEpochRevealed<timeline.NaiWaBirthEpoch>()) list.Add(naiwa);
 		__result = list;
 	}
 }
@@ -236,15 +238,52 @@ public static class FixNaiWaEpochCrash
 {
 	[HarmonyPatch("CheckFifteenElitesDefeatedEpoch")]
 	[HarmonyPrefix]
-	public static bool Prefix_Elites(Player localPlayer) => localPlayer.Character is not NaiWa;
+	public static bool Prefix_Elites(ProgressSaveManager __instance, Player localPlayer)
+	{
+		if (localPlayer.Character is not NaiWa) return true;
+		if (timeline.NaiWaTimelineProgress.GetDefeatedEliteCount(__instance.Progress) >= 15)
+		{
+			var obtain = AccessTools.Method(typeof(ProgressSaveManager), "TryObtainEpochMidRun");
+			if ((bool)obtain.Invoke(__instance, [MegaCrit.Sts2.Core.Timeline.EpochModel.Get<timeline.NaiWaSufferingEpoch>(), localPlayer])!)
+				__instance.SaveProgress();
+		}
+		return false;
+	}
 
 	[HarmonyPatch("CheckFifteenBossesDefeatedEpoch")]
 	[HarmonyPrefix]
-	public static bool Prefix_Bosses(Player localPlayer) => localPlayer.Character is not NaiWa;
+	public static bool Prefix_Bosses(ProgressSaveManager __instance, Player localPlayer)
+	{
+		if (localPlayer.Character is not NaiWa) return true;
+		if (timeline.NaiWaTimelineProgress.GetDefeatedBossCount(__instance.Progress) >= 15)
+		{
+			var obtain = AccessTools.Method(typeof(ProgressSaveManager), "TryObtainEpochMidRun");
+			if ((bool)obtain.Invoke(__instance, [MegaCrit.Sts2.Core.Timeline.EpochModel.Get<timeline.NaiWaLaughterEpoch>(), localPlayer])!)
+				__instance.SaveProgress();
+		}
+		return false;
+	}
 
 	[HarmonyPatch("ObtainCharUnlockEpoch")]
 	[HarmonyPrefix]
-	public static bool Prefix_Unlock(Player localPlayer) => localPlayer.Character is not NaiWa;
+	public static bool Prefix_Unlock(ProgressSaveManager __instance, Player localPlayer, int act)
+	{
+		if (localPlayer.Character is not NaiWa) return true;
+		if (act >= 0 && act <= 2)
+		{
+			var obtain = AccessTools.Method(typeof(ProgressSaveManager), "TryObtainEpochMidRun");
+			var epoch = act switch
+			{
+				0 => MegaCrit.Sts2.Core.Timeline.EpochModel.Get<timeline.NaiWaSearchEpoch>(),
+				1 => MegaCrit.Sts2.Core.Timeline.EpochModel.Get<timeline.NaiWaCluesEpoch>(),
+				_ => MegaCrit.Sts2.Core.Timeline.EpochModel.Get<timeline.NaiWaImprisonmentEpoch>()
+			};
+			if ((bool)obtain.Invoke(__instance, [epoch, localPlayer])!)
+				__instance.SaveProgress();
+		}
+		// Unsupported additional acts must not fall into the original epoch lookup.
+		return false;
+	}
 }
 
 // === Register custom event (时空裂隙, 仅第一层密�? ===

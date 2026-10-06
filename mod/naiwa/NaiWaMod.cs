@@ -23,6 +23,7 @@ public static class NaiWaMod
         Log.Info("奶蛙 mod 初始化中...");
 
         ScriptManagerBridge.LookupScriptsInAssembly(Assembly.GetExecutingAssembly());
+        timeline.NaiWaTimelineRegistry.EnsureRegistered();
 
         // Token cards (奶蛙食物、抑制剂、奶王之卵选择牌等) must NOT be in the character card pool,
         // otherwise generic combat card generation (skill/attack/power potions, Discovery, etc.)

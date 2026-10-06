@@ -27,9 +27,9 @@ This is a clean source snapshot of the development workspace, including current 
 Requirements: .NET 9, Godot .NET 4.5.1, your own legitimately installed Slay the Spire 2 game assemblies, and RitsuLib. Game assemblies and third-party dependency binaries are not redistributed.
 
 ```powershell
-dotnet build mod/naiwa/naiwa.csproj -c Release -p:Sts2DataDir="PATH_TO_MATCHING_GAME_ASSEMBLIES" -p:RitsuLibDll="PATH_TO_MATCHING_RITSULIB_DLL"
+dotnet build mod/naiwa/naiwa.csproj -c Release -p:Sts2DataDir="PATH_TO_MATCHING_GAME_ASSEMBLIES" -p:RitsuLibRoot="PATH_TO_RITSULIB_INSTALLATION"
 dotnet build mod/naiwa_loader/naiwa_loader.csproj -c Release -p:Sts2DataDir="PATH_TO_GAME_ASSEMBLIES"
-dotnet build variants/0.107.1/mod/naiwa/naiwa.csproj -c Release -p:Sts2DataDir="PATH_TO_0.107_GAME_ASSEMBLIES" -p:RitsuLibDll="PATH_TO_MATCHING_RITSULIB_DLL"
+dotnet build variants/0.107.1/mod/naiwa/naiwa.csproj -c Release -p:Sts2DataDir="PATH_TO_0.107_GAME_ASSEMBLIES" -p:RitsuLibRoot="PATH_TO_RITSULIB_INSTALLATION"
 ```
 
 The loader is installed as `mods/naiwa/naiwa.dll`; gameplay DLLs are installed under `mods/naiwa/lib/<game-version>/naiwa.dll`. Do not overwrite the loader with a gameplay DLL.

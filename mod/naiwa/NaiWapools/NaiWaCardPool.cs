@@ -1,5 +1,6 @@
 using Godot;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Unlocks;
 
 namespace NaiWa.NaiWapools;
 
@@ -13,6 +14,26 @@ public sealed class NaiWaCardPool : CardPoolModel
     public override bool IsColorless => false;
 
     private static CardModel[]? _cachedAllCards;
+
+    protected override IEnumerable<CardModel> FilterThroughEpochs(UnlockState unlockState, IEnumerable<CardModel> cards)
+    {
+        var lockedIds = new HashSet<ModelId>();
+        if (!unlockState.IsEpochRevealed<timeline.NaiWaSearchEpoch>())
+            lockedIds.UnionWith(timeline.NaiWaSearchEpoch.Cards.Select(card => card.Id));
+        if (!unlockState.IsEpochRevealed<timeline.NaiWaCluesEpoch>())
+            lockedIds.UnionWith(timeline.NaiWaCluesEpoch.Cards.Select(card => card.Id));
+        if (!unlockState.IsEpochRevealed<timeline.NaiWaImprisonmentEpoch>())
+            lockedIds.UnionWith(timeline.NaiWaImprisonmentEpoch.Cards.Select(card => card.Id));
+        if (!unlockState.IsEpochRevealed<timeline.NaiWaSufferingEpoch>())
+            lockedIds.UnionWith(timeline.NaiWaSufferingEpoch.Cards.Select(card => card.Id));
+        if (!unlockState.IsEpochRevealed<timeline.NaiWaLaughterEpoch>())
+            lockedIds.UnionWith(timeline.NaiWaLaughterEpoch.Cards.Select(card => card.Id));
+        if (!unlockState.IsEpochRevealed<timeline.NaiWaNightSkyEpoch>())
+            lockedIds.UnionWith(timeline.NaiWaNightSkyEpoch.Cards.Select(card => card.Id));
+        if (!unlockState.IsEpochRevealed<timeline.NaiWaLaughEpoch>())
+            lockedIds.UnionWith(timeline.NaiWaLaughEpoch.Cards.Select(card => card.Id));
+        return cards.Where(card => !lockedIds.Contains(card.Id)).ToList();
+    }
 
     protected override CardModel[] GenerateAllCards()
     {

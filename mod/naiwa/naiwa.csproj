@@ -5,8 +5,9 @@
     <LangVersion>13.0</LangVersion>
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <RitsuLibRoot Condition="'$(RitsuLibRoot)' == ''">$(MSBuildProjectDirectory)\..\..\dependencies\RitsuLib</RitsuLibRoot>
+    <RitsuLibGameVersion Condition="'$(RitsuLibGameVersion)' == ''">0.111.0</RitsuLibGameVersion>
     <Sts2DataDir Condition="'$(Sts2DataDir)' == ''">$(MSBuildProjectDirectory)\..\..\dependencies\0.111.0</Sts2DataDir>
-    <RitsuLibDll Condition="'$(RitsuLibDll)' == ''">$(MSBuildProjectDirectory)\..\..\dependencies\RitsuLib\STS2-RitsuLib.dll</RitsuLibDll>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,7 +24,23 @@
       <Private>false</Private>
     </Reference>
     <Reference Include="STS2-RitsuLib">
-      <HintPath>$(RitsuLibDll)</HintPath>
+      <HintPath>$(RitsuLibRoot)\compat\$(RitsuLibGameVersion)\STS2-RitsuLib.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="STS2-RitsuLib.Runtime">
+      <HintPath>$(RitsuLibRoot)\compat\$(RitsuLibGameVersion)\STS2-RitsuLib.Runtime.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="STS2-RitsuLib.Shared">
+      <HintPath>$(RitsuLibRoot)\shared\STS2-RitsuLib.Shared.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="STS2-RitsuLib.Settings">
+      <HintPath>$(RitsuLibRoot)\shared\STS2-RitsuLib.Settings.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="STS2-RitsuLib.Ui">
+      <HintPath>$(RitsuLibRoot)\shared\STS2-RitsuLib.Ui.dll</HintPath>
       <Private>false</Private>
     </Reference>
   </ItemGroup>

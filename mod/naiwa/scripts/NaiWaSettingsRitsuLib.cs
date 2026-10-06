@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using MegaCrit.Sts2.Core.Logging;
 using STS2RitsuLib;
+using STS2RitsuLib.Data;
 using STS2RitsuLib.Settings;
 using STS2RitsuLib.Utils.Persistence;
 
@@ -16,6 +17,8 @@ namespace NaiWa.scripts;
 /// </summary>
 public static class NaiWaSettingsRitsuLib
 {
+    private const string SettingsDataKey = "settings";
+
     private sealed class Model
     {
         public bool EnableLaughAnim { get; set; } = true;
@@ -29,27 +32,40 @@ public static class NaiWaSettingsRitsuLib
     public static bool EnableLaughAnim
     {
         get => _animBinding?.Read() ?? Instance.EnableLaughAnim;
-        set => _animBinding?.Write(value);
+        set
+        {
+            Instance.EnableLaughAnim = value;
+            _animBinding?.Write(value);
+        }
     }
 
     public static double LaughVolume
     {
         get => _volumeBinding?.Read() ?? Instance.LaughVolume;
-        set => _volumeBinding?.Write(Math.Clamp(value, 0, 1));
+        set
+        {
+            Instance.LaughVolume = Math.Clamp(value, 0, 1);
+            _volumeBinding?.Write(Instance.LaughVolume);
+        }
     }
 
     public static void Register()
     {
         try
         {
+            // Profile bindings address a registered model, not an individual field.
+            // Both controls must share the same JSON-backed data slot.
+            ModDataStore.For("naiwa").Register(SettingsDataKey, "naiwa_settings.json", SaveScope.Profile,
+                () => new Model(), autoCreateIfMissing: true);
+
             // 0.107.1 的 Profile 绑定在数据键从未写入时 Read 直接抛 KeyNotFoundException，
             // 用 SafeBinding 包装：读失败返回默认值，写正常持久化。
             _animBinding = new SafeBinding<bool>(
-                ModSettingsBindings.Profile<Model, bool>("naiwa", "enable_laugh_anim",
+                ModSettingsBindings.Profile<Model, bool>("naiwa", SettingsDataKey,
                     m => m.EnableLaughAnim, (m, v) => m.EnableLaughAnim = v),
                 () => true);
             _volumeBinding = new SafeBinding<double>(
-                ModSettingsBindings.Profile<Model, double>("naiwa", "laugh_volume",
+                ModSettingsBindings.Profile<Model, double>("naiwa", SettingsDataKey,
                     m => m.LaughVolume, (m, v) => m.LaughVolume = Math.Clamp(v, 0, 1)),
                 () => 0.7);
 
@@ -93,7 +109,12 @@ public static class NaiWaSettingsRitsuLib
             }
         }
 
-        public void Write(T value) => _inner.Write(value);
+        public void Write(T value)
+        {
+            _inner.Write(value);
+            // Also persist console-command writes, which bypass the settings page's save lifecycle.
+            _inner.Save();
+        }
 
         public string ModId => _inner.ModId;
 

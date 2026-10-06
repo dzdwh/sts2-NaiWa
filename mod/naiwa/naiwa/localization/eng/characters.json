@@ -10,7 +10,7 @@
   "NAI_WA.pronounObject": "it",
   "NAI_WA.pronounPossessive": "its",
   "NAI_WA.possessiveAdjective": "its",
-  "NAI_WA.unlockText": "Unlocked by default.",
+  "NAI_WA.unlockText": "Complete a run as {Prerequisite} to unlock.",
   "NAI_WA.banter.alive.endTurnPing": "Hahaha!",
   "NAI_WA.banter.dead.endTurnPing": "Ribbit..."
 }

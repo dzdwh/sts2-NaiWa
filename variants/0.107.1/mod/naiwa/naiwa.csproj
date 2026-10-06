@@ -5,8 +5,9 @@
     <LangVersion>13.0</LangVersion>
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <RitsuLibRoot Condition="'$(RitsuLibRoot)' == ''">$(MSBuildProjectDirectory)\..\..\..\..\dependencies\RitsuLib</RitsuLibRoot>
+    <RitsuLibGameVersion Condition="'$(RitsuLibGameVersion)' == ''">0.107.1</RitsuLibGameVersion>
     <Sts2DataDir Condition="'$(Sts2DataDir)' == ''">$(MSBuildProjectDirectory)\..\..\..\..\dependencies\0.107.1</Sts2DataDir>
-    <RitsuLibDll Condition="'$(RitsuLibDll)' == ''">$(MSBuildProjectDirectory)\..\..\..\..\dependencies\RitsuLib\STS2-RitsuLib.dll</RitsuLibDll>
     <!-- 排除 worktree 里的构建残留：plain csproj 的 obj/bin、旧 temp_bak* 备份（否则默认编译通配符会捡进
          生成文件导致 CS0579 重复 AssemblyInfo 属性） -->
     <DefaultItemExcludes>$(DefaultItemExcludes);obj/**;bin/**;.godot/mono/temp_bak/**;.godot/mono/temp_bak2/**;.godot/mono/temp_bak3/**</DefaultItemExcludes>
@@ -26,7 +27,23 @@
       <Private>false</Private>
     </Reference>
     <Reference Include="STS2-RitsuLib">
-      <HintPath>$(RitsuLibDll)</HintPath>
+      <HintPath>$(RitsuLibRoot)\compat\$(RitsuLibGameVersion)\STS2-RitsuLib.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="STS2-RitsuLib.Runtime">
+      <HintPath>$(RitsuLibRoot)\compat\$(RitsuLibGameVersion)\STS2-RitsuLib.Runtime.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="STS2-RitsuLib.Shared">
+      <HintPath>$(RitsuLibRoot)\shared\STS2-RitsuLib.Shared.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="STS2-RitsuLib.Settings">
+      <HintPath>$(RitsuLibRoot)\shared\STS2-RitsuLib.Settings.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="STS2-RitsuLib.Ui">
+      <HintPath>$(RitsuLibRoot)\shared\STS2-RitsuLib.Ui.dll</HintPath>
       <Private>false</Private>
     </Reference>
   </ItemGroup>

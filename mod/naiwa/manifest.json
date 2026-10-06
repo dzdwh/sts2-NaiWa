@@ -2,7 +2,7 @@
   "id": "naiwa",
   "name": "奶蛙",
   "author": "",
-  "version": "0.8.7",
+  "version": "0.9.0",
   "min_game_version": "0.107.1",
   "has_dll": true,
   "has_pck": true,
