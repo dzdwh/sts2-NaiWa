@@ -1,5 +1,5 @@
 {
-  "OPTION_SHI_ZU_DIGEST.name": "消化",
-  "OPTION_SHI_ZU_DIGEST.description": "选择一张牌删除，然后激活[gold]{RelicName}[/gold]：3场战斗后额外获得一次卡牌奖励。",
-  "OPTION_SHI_ZU_DIGEST.descriptionDisabled": "[red]没有可删除的牌。[/red]"
+  "OPTION_SHI_ZU_DIGEST.description": "Select a card to remove, then activate [gold]{RelicName}[/gold]: After 3 battles, you'll receive an additional card reward.",
+  "OPTION_SHI_ZU_DIGEST.descriptionDisabled": "[red]There are no cards to remove.[/red]",
+  "OPTION_SHI_ZU_DIGEST.name": "Digestion"
 }
